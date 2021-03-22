@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Shape Calculator</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+ 
+  <body>
+      <div id="ShapeCalculator">
+        <img src="./ShapeCalculator.png" />
+      </div>
+        <div class="content">
+            <div class="welcome">
+                <h2>Welcome to Shape Calculator</h2>
+                <p>Shape Calculator is an interactive web application. To the right you will find the 3 step application. Follow the instructions in each step. Clicking cancel will take you back to step 1. Enjoy!</p>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas.</p>
+            </div>
+      <div class="main-div">
+      <h1 id="title">Step 1 : Select your shape</h1>
+      <div id="header">Please select the shape that would like to calculate the area of and press the button "Go to step 2"</div>
+      <div class="selector" id="selector">
+          <div class="btn-div">
+      <input type="radio" id="0" name="shape" value="Rectangle" checked>
+      <label for="rectangle">Rectangle</label>
+      </div>
+      <div class="btn-div">
+      <input type="radio" id="1" name="shape" value="Circle">
+      <label for="circle">Circle</label></div>
+      <div class="btn-div">
+      <input type="radio" id="2" name="shape" value="Square">
+      <label for="square">Square</label></div>
+      <div class="btn-div">
+      <input type="radio" id="3" name="shape" value="Ellipse">
+      <label for="ellipse">Ellipse</label></div>
+    </div>
+    <div id="rectangle" style="display: none;margin: 0 auto;" class="input_div">
+      <label for="rectangle">Length:</label>
+      <input type="number" name="shapeValue" id="rectanglelength"/>
+      <br/>
+      <br/>
+      <label for="rectangle">Width:</label>
+      <input type="number" name="shapeSelectedValue" id="rectanglewidth"/>
+    </div>
+    <div id="circle" style="display: none;margin: 0 auto;" class="input_div">
+      <label for="circle">Radius:</label>
+      <input type="number" name="shapeValue" id="circlelength"/>
+    </div>
+    <div id="square" style="display: none;margin: 0 auto;" class="input_div">
+      <label for="Square">Side:</label>
+      <input type="number" name="shapeValue" id="squarelength"/>
+    </div>
+    <div id="ellipse" style="display: none;margin: 0 auto;" class="input_div">
+      <label for="Ellipse">Major Axis:</label>
+      <input type="number" name="shapeValue" id="ellipselength"/>
+      <br/>
+      <br/>
+      <label for="Ellipse">Minor Axis:</label>
+      <input type="number" name="shapeSelectedValue" id="ellipsewidth"/>
+    </div>
+    <h1 id="area" style="display: none;" ></h1>
+    <button class="btn" id="step1" onClick="goto_Step2()"> Go to Step2</button>
+      <a onclick="resetCalculator()">or Cancel</a>
+    <button class="btn" id="step2" onClick="goto_Step3()" style="display: none;margin: 0 auto;" > Go to Step3</button>
+    <button class="btn" id="step3" onClick="goto_Step1()" style="display: none;margin: 0 auto;">Start Over</button>
+    
+    </div>
+    <div class="advert">
+              <div class="advert__text">
+              120 x 240 Ad<br>
+                (Vertical Banner)
+              </div>
+    
+    </div>
+    </div>
+      <script type="text/javascript"  src="index.js"></script>
+</body>
+
+</html>
